@@ -32,8 +32,9 @@
       
       for(var i = 1; i <= 10; $i++)
       {
-        $('#yp-randomizer').html('<div id="yp-document-' + i + "'></div>");
-        myYumpu.create_player('#yp-document-' + i, documentIds[Math.floor(Math.random() * documentIds.length)]);
+        documentId = documentIds[Math.floor(Math.random() * documentIds.length)];
+        $('#yp-randomizer').html('<div class="pull-left"><h3>' + documentId + '</h3><div id="yp-document-' + i + "'></div></div>");
+        myYumpu.create_player('#yp-document-' + i, documentId);
       }
     </script>
   </head>
