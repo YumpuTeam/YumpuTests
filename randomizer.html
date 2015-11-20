@@ -30,12 +30,14 @@
       var myYumpu = new Yumpu();
       var documentIds = [26904868, 54695889, 54695904, 54696144, 26677412];
       
-      for(var i = 1; i <= 10; $i++)
-      {
-        documentId = documentIds[Math.floor(Math.random() * documentIds.length)];
-        $('#yp-randomizer').html('<div class="pull-left"><h3>' + documentId + '</h3><div id="yp-document-' + i + "' style="width: 400px; height:300px"></div></div>");
-        myYumpu.create_player('#yp-document-' + i, documentId);
-      }
+      $(function() {
+        for(var i = 1; i <= 10; $i++)
+        {
+          documentId = documentIds[Math.floor(Math.random() * documentIds.length)];
+          $('#yp-randomizer').html('<div class="pull-left"><h3>' + documentId + '</h3><div id="yp-document-' + i + "' style="width: 400px; height:300px"></div></div>");
+          myYumpu.create_player('#yp-document-' + i, documentId);
+        }
+      });
     </script>
   </head>
   <body>
