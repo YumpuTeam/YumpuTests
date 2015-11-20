@@ -13,6 +13,14 @@
       .pull-left{
         float:left;
       }
+      
+      .clearfix:after {
+          content: ".";
+          clear: both;
+          display: block;
+          visibility: hidden;
+          height: 0px;
+      }
     </style>
   </head>
   <body>
@@ -24,7 +32,7 @@
     <section class="main-content">
     
     
-    
+    <div class="yp-magazines clearfix">
 <div class="pull-left">
 <h3>Default magazine</h3>
 <div id="yp-default-document" style="width:400px; height:300px;"></div>
@@ -62,6 +70,7 @@
 <script>
    myYumpu.create_player("#yp-my-document-js", "27006059", { fallback_order: "js" });
 </script>
+</div>
 </div>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/YumpuTeam/YumpuTests">Yumputests</a> is maintained by <a href="https://github.com/YumpuTeam">YumpuTeam</a>.</span>
