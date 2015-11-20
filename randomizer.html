@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <script type="text/javascript" src="//www.yumpu.com/assets/v4/js/modules/toddycat/bin/YumpuMagazine.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <style>
       h3{
         margin-top:10px;
@@ -25,6 +26,16 @@
           height: 0px;
       }
     </style>
+    <script type="text/javascript">
+      var myYumpu = new Yumpu();
+      var documentIds = [26904868, 54695889, 54695904, 54696144, 26677412];
+      
+      for(var i = 1; i <= 10; $i++)
+      {
+        $('#yp-randomizer').html('<div id="yp-document-' + i + "'></div>");
+        myYumpu.create_player('#yp-document-' + i, documentIds[Math.floor(Math.random() * documentIds.length)]);
+      }
+    </script>
   </head>
   <body>
     <section class="page-header">
@@ -38,27 +49,7 @@
     <section class="main-content">
     
     
-    <div class="yp-bookshelfs clearfix">
-<div class="pull-left">
-<h3>GITHUB PAGES BOOKSHELF #1</h3>
-<p>(Default bookshelf)</p>
-<div id="yp-default-bookshelf" style="width:600px; height:260px; background-color:#FFFFFF;"></div>
-<script>
-   var myYumpu = new Yumpu();
-   myYumpu.create_bookshelf("#yp-default-bookshelf", "ktxeWhPWqhtLEZnq", "s.moser" );
-</script>
-</div>
-
-<div class="pull-left">
-<h3>GITHUB PAGES BOOKSHELF #2</h3>
-<p>(bookshelf with modified settings)</p>
-<div id="yp-my-bookshelf" style="width:600px; height:260px; background-color:#FFFFFF;"></div>
-<script>
-    myYumpu.create_bookshelf("#yp-my-bookshelf", "4dQ4gnyqN3TBKB42", "s.moser", { fullscreenLinkingActivated:"on", yumpu_bookshelf_flip_btn_color:"dark", title_font_color:"442222" } );
-</script>
-</div>
-
-</div>
+    <div id="yp-randomizer" class="clearfix"></div>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/YumpuTeam/YumpuTests">Yumputests</a> is maintained by <a href="https://github.com/YumpuTeam">YumpuTeam</a>.</span>
 
