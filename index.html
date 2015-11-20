@@ -12,19 +12,26 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Yumpu</h1>
-      <h2 class="project-tagline"></h2>
+      <h1 class="project-name">Magazines</h1>
+      <h2 class="project-tagline">Publishing digital magazines worldwide</h2>
     </section>
 
     <section class="main-content">
     
     
     
-<h3>Default </h3>
+<h3>Default magazine</h3>
 <div id="yp-default-document" style="width:500px; height:375px;"></div>
 <script>
    var myYumpu = new Yumpu();
    myYumpu.create_player("#yp-default-document", "27006059");
+</script>
+
+<h3>Default magazine</h3>
+<div id="yp-my-document" style="width:500px; height:375px;"></div>
+<script>
+   var myYumpu = new Yumpu();
+   myYumpu.create_player("#yp-my-document", "27006059", { startpage:4, singlepageViewOn:"1", canvasFSBGColor:"#BBDDCC"  });
 </script>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/YumpuTeam/YumpuTests">Yumputests</a> is maintained by <a href="https://github.com/YumpuTeam">YumpuTeam</a>.</span>
