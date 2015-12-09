@@ -1,0 +1,39 @@
+node_modules
+.sass-cache
+.grunt
+out
+*.generated.*
+*-generated-*
+dist
+dist-*
+
+# ignore generated css files
+calltoaction.css
+onepage-scroll-fixes.css
+style.css
+style-color.css
+style-common.css
+style-debug.css
+ylp.css
+ylp-animations.css
+src/_pages/**/*.css
+
+# ignore generated handlebars templates
+src/_common/templates/*.js
+
+# ignore Mac Files
+.DS_Store
+
+# Mediafiles
+.webm
+.mp4
+.ogg
+pivotbuilder/video/
+
+#datafiles
+*.csv
+beta-importer/vendor/
+
+#htmlAssembly
+htmlAssembly/output/
+htmlAssembly/node_modules/
