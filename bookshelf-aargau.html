@@ -28,7 +28,7 @@
     </style>
       <script type="text/javascript">
           setTimeout( "gtest()", 1000 );
-          alert("HEAD pre ready .... ");
+          //alert("HEAD pre ready .... ");
       </script>
   </head>
   <body>
@@ -115,12 +115,12 @@ data-fixierung='Fixierung: von "nicht fixiert" bis "nicht fixiert"'>
 <script type="text/javascript">
 
     function gtest() {
-        console.log("#gTest#");
+        alert("#gTest#");
     }
 
-    setTimeout( "gtest()", 1000 );
+    setTimeout( "gtest();", 1000 );
 
-    console.log("pre ready .... ");
+    alert("pre ready .... ");
     $( document ).ready(function() {
        var myYumpu = new Yumpu();
         console.log("init Yumpu Bookshelf");
