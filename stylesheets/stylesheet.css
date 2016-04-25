@@ -34,6 +34,29 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
+.btn-primary {
+	display: inline-block;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.3rem;
+}
+
+.btn-logout {
+	display: inline-block;
+    padding: 0.75rem 1rem;
+    color: #337ab7;
+    background-color: #fff;
+    border-color: #2e6da4;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.3rem;
+}
+
+
 @media screen and (min-width: 64em) {
   .btn {
     padding: 0.75rem 1rem; } }
