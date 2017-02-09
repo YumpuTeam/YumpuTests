@@ -37,3 +37,5 @@ beta-importer/vendor/
 #htmlAssembly
 htmlAssembly/output/
 htmlAssembly/node_modules/
+.idea/
+
