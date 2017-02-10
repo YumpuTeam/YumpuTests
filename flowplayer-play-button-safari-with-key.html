@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Without custom player</title>
-    <link rel="stylesheet" href="//releases.flowplayer.org/7.0.2/skin/skin.css">
-    <script src="//releases.flowplayer.org/7.0.2/flowplayer.min.js"></script>
+    <title>Custom player with key</title>
+    <link rel="stylesheet" href="./flowplayer/skin/skin.css">
+    <script src="./flowplayer/flowplayer.min.js"></script>
 </head>
 <body>
 
-<h1>Without custom player</h1>
-
+<h1>Custom player with key</h1>
 <div class="fp-edgy" id="flowplayerContainer"></div>
 
 <script type="text/javascript">
     window.addEventListener('load', function () {
         var flowplayerContainer = document.getElementById('flowplayerContainer');
         flowplayer(flowplayerContainer, {
+            key: '$940750546569430',
             clip: {
-                title: 'Without custom player',
+                title: 'Custom player with key',
                 sources: [
                     {
                         type: 'video/mp4',
